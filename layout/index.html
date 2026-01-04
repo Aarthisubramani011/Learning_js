@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Application</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+   
+    <header class="header">
+        <div class="header-left">
+            <ion-icon name="menu" id="menu-btn"></ion-icon>
+            <h1>Dashboard</h1>
+        </div>
+        <div class="header-right">
+            <div class="profile-btn" id="profile-btn">
+                
+                <ion-icon name="person-circle"></ion-icon>
+            </div>
+            <ul class="profile-menu" id="profile-menu">
+                <li>My Profile</li>
+                <li>Settings</li>
+                <li class="divider"></li>
+                <li class="logout">Logout</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <h3 class="main-menu-heading">Main Menu</h3>
+        <ul class="menu-list">
+            <li class="menu-item active">
+                <span>Dashboard</span>
+            </li>
+            
+            <li class="menu-item dropdown" id="products-dropdown">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <span>Products</span>
+                    <ion-icon name="chevron-down" class="arrow-icon"></ion-icon>
+                </div>
+            </li>
+            <ul class="dropdown-content" id="products-content">
+                <li>Add Product</li>
+                <li>Product List</li>
+            </ul>
+
+            <li class="menu-item dropdown" id="orders-dropdown">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                    <span>Orders</span>
+                    <ion-icon name="chevron-down" class="arrow-icon"></ion-icon>
+                </div>
+            </li>
+            <ul class="dropdown-content" id="orders-content">
+                <li>New Orders</li>
+                <li>Order History</li>
+            </ul>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="main-content">
+        <h1>Welcome to Dashboard</h1>
+        <p>Click on menu items to navigate through the dashboard.</p>
+    </main>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
