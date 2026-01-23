@@ -1,0 +1,4 @@
+- [x] Fix the click event listener in index.js to properly select cells using getElementsByClassName('cell')
+- [x] Add logic to handle piece selection and movement: on first click select a piece, on second click move if valid
+- [x] Implement basic validation: can move to empty cell or capture opposite piece
+- [x] Test the changes by opening index.html in browser
