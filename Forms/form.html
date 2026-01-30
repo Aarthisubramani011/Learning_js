@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentform</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="head">
+        <h1>Students Form</h1>
+    </header>
+    <main class="container">
+        <section>
+
+            <div class="form-container">
+
+                <form class="forms">
+                    <h1 style="font-style: bold;"> Add student data</h1>
+                    <label for="roll-no">Roll-no</label>
+                    <input type="text" name="roll-no" id="roll-no" maxlength="10" placeholder="Enter Roll no" unique
+                        required>
+                    <br>
+
+                    <label for="fullname"> Full Name</label>
+                    <input id="name" name="fullname" placeholder="Enter Name" type="text" required>
+                    <br>
+
+                    <label for="age"> Age</label>
+                    <input id="age" name="age" placeholder="Enter age" type="number" min=18 max=100 maxlength="2">
+                    <br>
+                    <label for="gender" required>Gender</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                    <br>
+                    <br>
+                    <label for="Country">Country</label>
+                    <select id="Country" name="Country">
+                        <option value="United States of America">United States of America</option>
+                        <option value="India">India</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                    <br>
+
+                    <label for="Education">Education</label>
+                    <select id="Education" name="Education" required>
+                        <option value="Bachelor of Science">Bachelor of Science</option>
+                        <option value="Bachelor of Technology">Bachelor of Technology</option>
+                        <option value="Bachelor of Engineering"> Bachelor of Engineering</option>
+                        <option value="Bachelor of Arts">Bachelor of Arts</option>
+                        <option value="Master of Business Administration">Master of Business Administration</option>
+                    </select>
+                    <br>
+
+                    <input type="checkbox" id="terms-access" name="terms-access"
+                        value="Accepeted the terms and Conditions" required>
+                    <label for="terms-access">I here by accept the terms and conditions</label>
+                    <br>
+                    <button class="submit-btn" id="submit-btn">Submit</button>
+                    <button class="reset-btn" id="reset-btn">Reset</button>
+                    </forms>
+            </div>
+
+        </section>
+
+
+    </main>
+    <script src="./js/data.js"></script>
+    <script src="./js/interaction.js"></script>
+</body>
+
+</html>
